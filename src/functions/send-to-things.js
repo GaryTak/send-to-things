@@ -5,7 +5,7 @@ require("dotenv").config();
 
 sendgrid.setApiKey(process.env.SENDGRID_KEY);
 
-module.exports = async function handler(event, context, callback) {
+async function handler(event, context, callback) {
   if (event.httpMethod !== "POST") {
     return callback(null, {
       statusCode: 301,
@@ -65,3 +65,4 @@ function sendEmail({ title, content }) {
   });
 }
 
+exports.handler = handler;
