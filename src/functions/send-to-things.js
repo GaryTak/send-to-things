@@ -1,6 +1,5 @@
-<script type="module">
   
-import sendgrid from "@sendgrid/mail";
+const sendgrid = require("@sendgrid/mail");
 
 require("dotenv").config();
 
