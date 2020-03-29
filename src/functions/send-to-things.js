@@ -1,3 +1,5 @@
+<script type="module">
+  
 import sendgrid from "@sendgrid/mail";
 
 require("dotenv").config();
@@ -63,3 +65,5 @@ function sendEmail({ title, content }) {
     );
   });
 }
+
+</script>
