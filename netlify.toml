@@ -1,5 +1,5 @@
 [build]
-    functions = "./src/functions"
+    functions = "./functions"
 
 [template.environment]
   SENDGRID_KEY = "Your Sendgrid API key"
